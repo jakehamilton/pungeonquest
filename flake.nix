@@ -33,9 +33,8 @@
             buildInputs = [makeWrapper];
 
             npmFlags = ["--ignore-scripts"];
-            # npmInstallFlags = [ "--ignore-scripts" ];
 
-            npmDepsHash = "sha256-QhtPHfbh2Ei8mt/5kUDFIe9wFGJ1lI9i749V82My2D0";
+            npmDepsHash = "sha256-Sx35x0vOkOQc9Zxg6G9Jhs4GoJDF9qrfUEKwOUA7ojo=";
             # NODE_OPTIONS = "--openssl-legacy-provider";
 
             buildPhase = ''
