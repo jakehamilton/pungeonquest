@@ -20,14 +20,14 @@ const PlayAuth = () => {
 
 	return (
 		<div>
-			<div class="h-22 light:bg-light-700 dark:bg-dark-500"></div>
+			<div class="h-22"></div>
 			<div class="px-4">
 				<form
 					onSubmit={handleSubmit}
 					class="mx-auto mt-10 max-w-100 px-6 py-4 bg-light-200 dark:bg-dark-400 shadow-md rounded-lg"
 				>
 					<label class="flex flex-col">
-						<span class="prose-xl flex items-center">
+						<span class="prose-xl flex items-center dark:text-light-900">
 							<Lock class="inline-block mr-1" size={20} />
 							Password
 						</span>
@@ -37,7 +37,7 @@ const PlayAuth = () => {
 						<input
 							type="password"
 							placeholder="my-room-password"
-							class={`rounded border-light-800 mt-1 ${
+							class={`rounded light:border-light-800 light:bg-light-200 dark:border-dark-200 dark:bg-dark-600 mt-1 ${
 								joinError ? "border-red-500" : ""
 							}`}
 							autocomplete="off"

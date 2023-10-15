@@ -23,7 +23,7 @@ const CreateCharacter: FunctionComponent<CreateCharacterProps> = (props) => {
 	const [style, setStyle] = useState<Character["style"]>(
 		props.style ?? "Alien"
 	);
-	const [role, setRole] = useState<Character["role"]>(props.role ?? "Doctor");
+	const [role, setRole] = useState<Character["role"]>(props.role ?? "Knight");
 	const [number, setNumber] = useState<Character["number"]>(props.number ?? 3);
 
 	const [nameError, setNameError] = useState(null);
@@ -41,7 +41,6 @@ const CreateCharacter: FunctionComponent<CreateCharacterProps> = (props) => {
 	};
 
 	const handleChangeNumber = (event) => {
-		console.log(7 - event.target.value);
 		setNumber(7 - event.target.value);
 	};
 
@@ -86,6 +85,7 @@ const CreateCharacter: FunctionComponent<CreateCharacterProps> = (props) => {
 					name="password"
 				/>
 			</label>
+			{/*
 			<label class="flex flex-col pb-4">
 				<span class="prose-xl flex items-center dark:text-light-900">
 					<Zap class="mr-2" />
@@ -103,6 +103,7 @@ const CreateCharacter: FunctionComponent<CreateCharacterProps> = (props) => {
 					))}
 				</select>
 			</label>
+			*/}
 			<label class="flex flex-col pb-4">
 				<span class="prose-xl flex items-center dark:text-light-900">
 					<Users class="mr-2" />
@@ -122,14 +123,8 @@ const CreateCharacter: FunctionComponent<CreateCharacterProps> = (props) => {
 			</label>
 			<label class="flex flex-col pb-4">
 				<div class="prose-xl flex items-center justify-between">
-					<span class="flex items-center dark:text-light-900">
-						<LaserPistolOutline class="mr-2" width="32" />
-						Lasers
-					</span>
-					<span class="flex items-center dark:text-light-900">
-						Feelings
-						<FeelingsOutline class="ml-2" width="32" />
-					</span>
+					<span class="flex items-center dark:text-light-900">Pain</span>
+					<span class="flex items-center dark:text-light-900">Pun</span>
 				</div>
 				<input
 					type="range"

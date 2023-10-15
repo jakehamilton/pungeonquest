@@ -1,5 +1,5 @@
 import { createContext, FunctionComponent } from "preact";
-import { useMemo, useState, useEffect } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 import noop from "../util/noop";
 
 interface DarkThemeContextValue {
@@ -18,11 +18,11 @@ export const DarkThemeProvider: FunctionComponent = ({ children }) => {
 			return false;
 		}
 
-		const savedIsDarkTheme = localStorage.getItem("isDarkTheme");
+		// const savedIsDarkTheme = localStorage.getItem("isDarkTheme");
 
-		if (savedIsDarkTheme) {
-			return true;
-		}
+		// if (savedIsDarkTheme) {
+		// 	return true;
+		// }
 
 		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
 			return true;

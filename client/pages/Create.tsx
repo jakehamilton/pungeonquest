@@ -36,7 +36,7 @@ const Create = () => {
 	return (
 		<div class="flex flex-col h-[100vh] light:bg-light-400 dark:bg-dark-600">
 			<Header class="absolute top-0 left-0 right-0" />
-			<div class="h-22 light:bg-light-700 dark:bg-dark-500"></div>
+			<div class="h-22"></div>
 			<div class="px-4">
 				<form
 					onSubmit={handleSubmit}
@@ -50,7 +50,7 @@ const Create = () => {
 						<input
 							type="password"
 							placeholder="my-room-password"
-							class="rounded light:border-light-800 mt-1 dark:border-dark-200 dark:text-light-900 dark:bg-dark-100 dark:placeholder-light-700 dark:placeholder-opacity-50"
+							class="rounded light:border-light-800 mt-1 dark:border-dark-200 dark:text-light-900 dark:bg-dark-600 dark:placeholder-light-700 dark:placeholder-opacity-50"
 							autocomplete="off"
 							value={password}
 							onChange={handleChange}

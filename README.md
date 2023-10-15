@@ -1,2 +1,3 @@
-# lasersandfeelings
-A web app for the game Lasers And Feelings
+# Pungeonquest
+
+A web app for Pungeonquest.

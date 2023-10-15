@@ -55,7 +55,7 @@ const Play = () => {
 			if (role === "player" && !game.players[socket.id].character) {
 				return (
 					<div>
-						<div class="h-22 light:bg-light-700 dark:bg-dark-500"></div>
+						<div class="h-22"></div>
 						<div class="px-4">
 							<CreateCharacter onCreate={handleCreate} loading={isCreating} />
 						</div>

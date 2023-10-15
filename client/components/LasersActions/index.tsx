@@ -14,10 +14,12 @@ const LasersActions = () => {
 
 	return (
 		<div>
-			<ActionButton class="w-[190px] font-thick" onClick={handleRoll(1)}>
-				<LaserPistolOutline class="stroke-light-500 fill-light-500 mr-3" />
+			<ActionButton
+				class="w-[190px] font-thick justify-center"
+				onClick={handleRoll(1)}
+			>
 				<span class="font-thick text-size-[1.5rem] tracking-wide py-2">
-					Lasers
+					Pain
 				</span>
 			</ActionButton>
 			<div class="flex gap-2">

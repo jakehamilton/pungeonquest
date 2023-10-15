@@ -66,11 +66,10 @@ export default defineConfig({
 					pluginQuestionMark,
 					pluginHeroPatterns({
 						includeThemeColors: true,
-						patterns: ["topography"],
+						patterns: ["hexagons", "skulls"],
 						colors: {
 							default: "primary",
-							purple: "purple",
-							pink: "pink",
+							teal: "teal",
 						},
 					}),
 				],

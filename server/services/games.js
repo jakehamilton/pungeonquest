@@ -228,7 +228,7 @@ const roll = (socket, data) => {
 	}
 
 	if (isLaserFeelings) {
-		player.character.status = "Laser Feelings";
+		player.character.status = "Punbelievable";
 	} else if (successes === 0) {
 		player.character.status = "Failure";
 	} else if (successes === 1) {

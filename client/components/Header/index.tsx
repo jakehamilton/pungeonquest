@@ -41,7 +41,7 @@ const Header: FunctionComponent<HeaderProps> = ({ class: className = "" }) => {
 					as="a"
 					target="_blank"
 					rel="noopener noreferrer"
-					href="https://github.com/jakehamilton/lasersandfeelings"
+					href="https://github.com/jakehamilton/pungeonquest"
 					class=""
 					aria-label="GitHub"
 				>

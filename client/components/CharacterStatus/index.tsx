@@ -1,17 +1,13 @@
 import { FunctionComponent } from "preact";
 
 const placeholders = [
+	"Dungeon't",
+	"Questionable",
 	"Ready!",
-	"Locked & Loaded",
-	"Phasers to Fun",
-	"Embrace My Love",
-	"Ready For Love",
-	"Ready 😭",
-	"PEW PEW PEW",
-	"Ludicrous Speed",
-	"Emotionally Ready",
 	"Let's Go Already!",
-	"Space Love",
+	"Spellebrity",
+	"Question Mark",
+	"Elf Improvement",
 ];
 
 const randomEmptyMessage = () => {
@@ -25,7 +21,7 @@ export enum Statuses {
 	SUCCESS = "Success",
 	MIXED = "Mixed Success",
 	FAILURE = "Failure",
-	LASER_FEELINGS = "Laser Feelings",
+	LASER_FEELINGS = "Punbelievable",
 	CRITICAL = "Critical Success",
 }
 
@@ -48,8 +44,8 @@ const CharacterStatus: FunctionComponent<CharacterStatusProps> = ({
 			{...props}
 			class={`font-thick animate animate-bounce-in ${className ?? ""}`}
 		>
-			<span class="text-purple-600">Laser</span>&nbsp;
-			<span class="text-pink-600">Feelings</span>
+			<span class="text-purple-500">Pun</span>
+			<span class="text-teal-500">believable</span>
 		</div>
 	) : (
 		<div

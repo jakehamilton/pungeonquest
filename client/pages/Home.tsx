@@ -12,22 +12,6 @@ const Home = () => {
 
 	const handlePlayNow = async () => {
 		return;
-
-		setIsCreatingGame(true);
-
-		try {
-			const response = await fetch("/api/game/create", {
-				method: "POST",
-			});
-
-			const { id, ownerKey } = await response.json();
-
-			localStorage.setItem(id, ownerKey);
-
-			route(id);
-		} catch (error) {
-			console.error("Error", error);
-		}
 	};
 
 	return (
@@ -38,19 +22,20 @@ const Home = () => {
 				isPlayNowLoading={!isConnected || isCreatingGame}
 			/>
 			<div class="container mx-auto px-6 pt-10 light:text-dark-600 dark:text-light-900">
-				<h2 class="font-thick text-size-[2.5rem]">Learn To Play</h2>
-				<p class="pt-2 prose-lg">
-					Lasers & Feelings is an easy game to learn. Take a look at the rules
-					to learn how to play!
+				<h2 class="font-thick text-size-[2.5rem]">Get Started</h2>
+				<p class="pt-2 prose-lg max-w-180">
+					To start playing Pungeonquest, your game master will need a copy of
+					the adventure. Make sure you have this on hand before you start!
 				</p>
 				<ActionButton
 					as="a"
-					href="https://johnharper.itch.io/lasers-feelings"
+					href="https://shop.landofeem.com/collections/frontpage/products/pungeon-quest-a-land-of-eem-adventure"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<Download class="mr-2" /> Download Rules
+					<Download class="mr-2" /> Adventure PDF
 				</ActionButton>
+				<p class="pt-2 prose-lg max-w-180"></p>
 			</div>
 		</div>
 	);
